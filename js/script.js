@@ -27,7 +27,7 @@ fetch('https://jsonplaceholder.typicode.com/users')
         data.forEach((user) => {
             listaUsuarios.innerHTML +=`
             <li>
-                <div class:"userdata">
+                <div class:"userData">
                     <p>Nombre: ${user.name} </p>
                     <p>Edad: </p>
                     <p>Username: ${user.username}</p>
@@ -35,7 +35,7 @@ fetch('https://jsonplaceholder.typicode.com/users')
                     <p>Email: ${user.email}</p>
                 </div>
                 <div class="image">
-                    <img src:"./assets/img/1.jpeg" alt=${user.name}
+                    <img src:"./img/1.jpeg" alt=${user.name}/>
                 </div>
                 <div class="work">
                     <p>Compañia: ${user.company.name}</p>

@@ -10,4 +10,8 @@ h1 {
   color: #333;
 }
 
-
+#listaUsuarios {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
