@@ -10,15 +10,19 @@
 
 // address tendrá estos datos como valor: usuario.address.street, usuario.address.suite, usuario.address.city
 
-/*const [user1, ...rest] = users;
-console.log(user1)
-console.log(rest);*/
+
 
 
 
 const listaUsuarios = document.getElementById('listaUsuarios');
 console.log(listaUsuarios)
 
+let edad = Math.ceil(Math.random()*70);
+console.log(edad)
+
+/*const [user1, ...rest] = data;  //Modificar array, pero donde? dentro del fetch?
+console.log(user1)
+console.log(rest);*/
 
 fetch('https://jsonplaceholder.typicode.com/users')
     .then((response) => response.json())
@@ -29,7 +33,7 @@ fetch('https://jsonplaceholder.typicode.com/users')
             <li>
                 <div class:"userData">
                     <p>Nombre: ${user.name} </p>
-                    <p>Edad: </p>
+                    <p>Edad: ${edad} </p>
                     <p>Username: ${user.username}</p>
                     <p>Phone: ${user.phone}</p>
                     <p>Email: ${user.email}</p>
@@ -47,3 +51,5 @@ fetch('https://jsonplaceholder.typicode.com/users')
                
        }) 
     });
+
+
