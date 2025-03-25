@@ -10,8 +10,31 @@ h1 {
   color: #333;
 }
 
-#listaUsuarios {
+img {
+  width: 100px;
+}
+
+ul {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  padding: 20px;
+  gap: 20px;
+  list-style: none;
+}
+
+li {
+  width: 400px;
+  border: 1px solid grey;
+}
+
+.info {
+  border: 1px solid grey;
+  margin: 3px;
+  padding: 3px;
+}
+
+.data {
+  display: flex;
+  justify-content: space-between;
 }
